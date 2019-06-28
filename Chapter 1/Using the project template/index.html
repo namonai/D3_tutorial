@@ -47,13 +47,24 @@
 				.enter()
 					.append('text')
 					.classed('bar-label',true)
-					.attr('x',10)
+					.attr('x',function(d,i){
+						return x(d)
+					})
+					.attr('dx',-10)
 					.attr('y',function(d,i){
-						return y(i)+100;
+						return y(i);
+					})
+					.attr('dy',function(d,i){
+						return y(1)/1.5-3
 					})
 					.text(function(d,i){
 						return d
 					})
+
+	function plot(params){
+
+	}
+	plot();
 </script>	
 </body>
 </html>

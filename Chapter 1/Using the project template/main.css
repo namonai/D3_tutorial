@@ -14,3 +14,9 @@ body,html{
 	fill: cornflowerblue;
 	shape-rendering: crispEdges;
 }
+
+.bar-label{
+	text-anchor: end;
+	font-size: 1.5em;
+
+}
